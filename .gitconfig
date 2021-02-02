@@ -1,0 +1,14 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = Kirill Chuyanov
+	email = 10977678+archanger@users.noreply.github.com
+[core]
+	editor = code --wait
+[commit]
+	template = /Users/kirill/.stCommitMsg
+[rerere]
+	enabled = false
