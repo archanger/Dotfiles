@@ -113,10 +113,5 @@ alias gcb="git checkout -b"
 
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-if [ -f $(brew --prefix)/etc/brew-wrap ];then
-  source $(brew --prefix)/etc/brew-wrap
-fi
-
-export GITHUB_API_TOKEN=a257c128452c5072b4583adc4797fd308a05ac80
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
