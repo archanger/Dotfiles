@@ -63,13 +63,20 @@ SAVEHIST=1000
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  zsh_reload
+  thefuck
+  ruby
+  pod
+  pip
   nvm
   npm
+  vscode
+  docker
   dotenv
   gitignore
+  command-not-found
   git
   zsh-autosuggestions
+  history
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -103,17 +110,12 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ls='colorls -h --group-directories-first -1'
-alias l='colorls --group-directories-first --almost-all'
-alias ll='colorls --group-directories-first --almost-all --long'
-
 alias gf="git fetch -p"
 alias gc="git checkout"
 alias gcb="git checkout -b"
-
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
