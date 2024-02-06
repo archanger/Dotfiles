@@ -115,9 +115,9 @@ alias gc="git checkout"
 alias gcb="git checkout -b"
 
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="$HOME/fvm/default/bin:$PATH"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 eval "$(rbenv init - zsh)"
