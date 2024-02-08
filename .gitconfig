@@ -12,3 +12,5 @@
 	template = /Users/kirill/.stCommitMsg
 [rerere]
 	enabled = false
+[init]
+	defaultBranch = main
